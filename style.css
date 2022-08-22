@@ -1,0 +1,74 @@
+/*--------------General Style----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+
+:root {
+/*----------------Primary --------------------*/
+--scissors-gradient_1: hsl(39, 89%, 49%);
+--scissors-gradient_2: hsl(40, 84%, 53%);
+--paper-gradient_1: hsl(230, 89%, 62%);
+--paper-gradienr_2: hsl(230, 89%, 65%);
+--rock-gradient_1: hsl(349, 71%, 52%);
+--rock-gradient_2: hsl(349, 70%, 56%);
+
+/*------------Neutral------------------*/
+--dark-text: hsl(229, 25%, 31%);
+--score-text: hsl(229, 64%, 46%);
+--header-outline: hsl(217, 16%, 45%);
+
+/*------------Background-----------------*/
+--radial-gradient_1: hsl(214, 47%, 23%);
+--radial-gradient_2: hsl(237, 49%, 15%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(0deg, var(--radial-gradient_2),  var(--radial-gradient_1));
+}
+
+/*-------------Board Score --------------------*/
+
+.board__container {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    border: 3px solid var(--header-outline);
+    border-radius: 10px;
+}
+
+.board__image {
+    width: 6rem;
+    height: 3.5rem;
+}
+
+.score__container {
+    display: flex;
+    padding: .6rem 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: linear-gradient(0deg, rgb(229, 228, 228), rgb(255, 254, 254));
+}
+
+.score__title {
+    font-size: .75rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--score-text);
+}
+
+.score__number {
+    font-size: 2.5rem;
+    color: var(--dark-text);
+}
