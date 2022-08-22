@@ -27,7 +27,9 @@
 }
 
 body {
-    height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(0deg, var(--radial-gradient_2),  var(--radial-gradient_1));
 }
 
@@ -123,7 +125,7 @@ body {
 
 .rules__btn {
     padding: .7rem 2rem;
-    margin: 10rem 32%;
+    margin: 10rem auto;
 
     font-size: 1rem;
     font-weight: 700;
