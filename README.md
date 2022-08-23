@@ -20,6 +20,7 @@ Users should be able to:
 - View the optimal layout for the game depending on their device's screen size
 - Play Rock, Paper, Scissors against the computer
 - See the rules of the game clicking on the button "RULES"
+- Know if the user won, lost or drawed
 
 ### Screenshot
 
