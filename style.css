@@ -246,6 +246,10 @@ body {
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
 /*--------------- Rules ----------------------------*/
 
 .rules__btn {
