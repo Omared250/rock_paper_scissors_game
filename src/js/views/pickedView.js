@@ -1,27 +1,26 @@
 class pickedView {
-    _parentEl = document.querySelector('#game__container');
-    _Elements = this._parentEl.querySelectorAll('img');
+    _gameParentEl = document.querySelector('#game__container');
+    _pickedParentEl = document.querySelector('#picked__container');
+    _Elements = this._gameParentEl.querySelectorAll('img');
 
     pick(handler) {
         this._Elements.forEach(img => {
             img.addEventListener('click', (e) => {
-                this._parentEl.classList.remove('game__container');
-                this._parentEl.classList.add('picked__container');
+                this._gameParentEl.classList.add('hidden');
+                this._pickedParentEl.innerHTML = '';
+                this._pickedParentEl.classList.remove('hidden');
 
                 if (e.target.id === 'rock') {
-                    this._parentEl.innerHTML = '';
                     this._renderPicked();
                     this._renderUserChoice(e.target);
                     this._renderComputerChoice();
 
                 } else if (e.target.id === 'scissors') {
-                    this._parentEl.innerHTML = '';
                     this._renderPicked();
                     this._renderUserChoice(e.target);
                     this._renderComputerChoice();
 
                 } else if (e.target.id === 'paper') {
-                    this._parentEl.innerHTML = '';
                     this._renderPicked();
                     this._renderUserChoice(e.target);
                     this._renderComputerChoice();
@@ -34,7 +33,7 @@ class pickedView {
 
     _renderPicked() {
         const markup = this._generateMarkupPicked();
-        this._parentEl.insertAdjacentHTML('beforeend', markup);
+        this._pickedParentEl.insertAdjacentHTML('beforeend', markup);
     }
 
     _renderUserChoice(picked) {
