@@ -64,6 +64,10 @@ const controlOptions = function() {
     })
 }
 
+const controlRules = function() {
+    
+}
+
 
 const init = function() {
     pickedView.pick(controlPick);
