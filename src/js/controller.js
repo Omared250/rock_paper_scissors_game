@@ -1,6 +1,7 @@
 import decisionView from "./views/decisionView.js";
 import pickedView from "./views/pickedView.js";
 import * as model from "./model.js"
+import rulesView from "./views/rulesView.js";
 
 const controlPick = function() {
     const userChoice = document.querySelector('.user__choice').querySelector('img');
@@ -65,11 +66,27 @@ const controlOptions = function() {
 }
 
 const controlRules = function() {
+    const closeBtn = document.querySelector('.close__btn');
+    const rulesBtn = document.querySelector('.rules__btn');
+    const overlay = document.querySelector('.overlay');
+    const modal = document.querySelector('.modal');
+
+    rulesBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+    })
     
+    closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.add('hidden');
+        overlay.classList.add('hidden');
+    })
 }
 
 
 const init = function() {
     pickedView.pick(controlPick);
+    rulesView.renderRules(controlRules);
 }
 init();
