@@ -216,11 +216,41 @@ body {
     }
 }
 
+/*--------------- Desicion area ---------------------*/
+
+.decision__container {
+    width: 90%;
+    height: 10rem;
+    margin: 5rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.decision {
+    margin: 0 auto;
+    color: rgb(250, 250, 250);
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.play__again__btn {
+    width: 13rem;
+    height: 3rem;
+    margin: 1rem auto 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    color: var(--dark-text);
+    font-weight: bold;
+}
+
 /*--------------- Rules ----------------------------*/
 
 .rules__btn {
     padding: .7rem 2rem;
-    margin: 10rem auto;
+    margin: 5rem auto;
 
     font-size: 1rem;
     font-weight: 700;

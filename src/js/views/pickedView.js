@@ -27,7 +27,7 @@ class pickedView {
                     this._renderComputerChoice();
                 }
 
-                handler()
+                handler();
             })
         })
     }
