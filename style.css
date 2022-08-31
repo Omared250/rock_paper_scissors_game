@@ -31,6 +31,18 @@ body {
     background: linear-gradient(0deg, var(--radial-gradient_2),  var(--radial-gradient_1));
 }
 
+@media (min-width: 980px) {
+    body {
+        heigth: auto;
+    }
+}
+
+@media (min-width: 980px) {
+    body {
+        heigth: auto;
+    }
+}
+
 /*-------------Board Score --------------------*/
 
 .board__container {
