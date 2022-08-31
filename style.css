@@ -37,12 +37,6 @@ body {
     }
 }
 
-@media (min-width: 980px) {
-    body {
-        heigth: auto;
-    }
-}
-
 /*-------------Board Score --------------------*/
 
 .board__container {
